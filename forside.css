@@ -1,0 +1,34 @@
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+#menuknap {
+    display: inline-block;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform 0.3s;
+    transform-origin: top left;
+}
+
+
+/*********    menuknap forsvinder når skærmen er over 600px  ************/
+@media (min-width:600px) {
+
+    #menuknap {
+        display: none;
+    }
+
+    /* når skærmen er større end 600 skal klassen hidden ikke være usynlig længere*/
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+
+}
