@@ -2,3 +2,21 @@ img {
     width: 100%;
     height: auto;
 }
+
+#top_blog {
+    position: relative;
+    text-align: center;
+    color: white;
+    opacity: 100%;
+}
+
+.overskrift {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 2rem;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+}
