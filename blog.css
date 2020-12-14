@@ -7,16 +7,23 @@ img {
     position: relative;
     text-align: center;
     color: white;
-    opacity: 100%;
 }
 
-.overskrift {
+.overskrift_1 {
     position: absolute;
-    top: 62%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, 50%);
     font-size: 2rem;
-    background-color: black;
+    background-color: #cbb7A4;
     padding: 5px;
     text-align: center;
+}
+
+.overskrift_2 {
+    padding-left: 1px;
+}
+
+#blog_liste {
+    padding: 10px;
 }
