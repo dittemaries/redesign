@@ -9,7 +9,7 @@ html {
 
 body {
     display: grid;
-    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-rows: auto 1fr auto;
     min-height: 100%;
     line-height: 1.4;
     font-family: system-ui;
@@ -35,9 +35,7 @@ footer {
 }
 
 main {
-    display: grid;
     padding: 2rem;
-    grid-template-columns: 50% 50%;
 }
 
 
@@ -51,6 +49,7 @@ section {
     background: #cbb7a4;
     color: #fff;
     border-radius: 8px;
+    width: 650px;
 }
 
 article {
@@ -69,12 +68,14 @@ label {
     font-weight: 600;
 }
 
-input {
+input,
+textarea {
     display: block;
     font-size: 1.1rem;
     padding: .5rem;
     border-radius: 4px;
     border: 0;
+    width: 100%;
 }
 
 button {
@@ -87,4 +88,24 @@ button {
     text-shadow: 0 0 6px rgb(0 0 0 / 40%);
     font-weight: 700;
     font-size: 1rem;
+}
+
+.streg {
+    padding: 2rem;
+}
+
+.vindekilde {
+    width: 650px;
+    height: 400px;
+    margin-top: 0.75rem;
+}
+
+.rutevejledning {
+    background-color: bisque;
+    width: 650px;
+    height: 200px;
+    padding-left: 1.25rem;
+    padding-right: 0.75rem;
+    font-size: 2rem;
+    padding-top: 2rem;
 }
