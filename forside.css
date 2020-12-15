@@ -9,7 +9,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 14vh;
+    min-height: 13vh;
     background-color: #CBB7A4;
     font-family: 'Montserrat', sans-serif;
 }
@@ -22,6 +22,11 @@ nav {
     font-family: 'Playfair Display', serif;
     position: absolute;
     left: 3vw;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
 }
 
 .logo h4 {
@@ -98,7 +103,7 @@ nav {
     .menu {
         position: absolute;
         right: 0px;
-        height: 90vh;
+        height: 83vh;
         top: 13vh;
         background-color: #CBB7A4;
         display: flex;
@@ -127,9 +132,58 @@ nav {
         display: block;
         z-index: 10;
     }
+
+    .banner {
+        background: url("img/kandefraside.jpg");
+        background-size: cover;
+        background-position: left;
+        width: 100%;
+        height: 100vh;
+    }
 }
 
 /*Når menuknappen klikkes skal den tydeligøres*/
 .menuknap_aktiv {
     transform: translateX(0%);
 }
+
+
+
+/***************** BANNER ********************/
+
+.banner {
+    background: url("img/kandefraside.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 83vh;
+}
+
+/***************** BILLEDER TIL PRODUKTSIDE ********************/
+
+.billede1 {
+    background: url("img/kandefraside.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    position: relative;
+    top: 5rem;
+    width: 100%;
+    height: 83vh;
+}
+
+/*
+.billede2 {
+    background: url("img/kandefraside.jpg");
+    background-size: cover;
+    background-position: center;
+    top: 2rem;
+}
+
+.billede3 {
+    background: url("img/kandefraside.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+}
+*/
