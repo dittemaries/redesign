@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+}
 
 
 /************* FOOTER ************/
