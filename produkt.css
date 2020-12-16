@@ -1,6 +1,6 @@
 #sectionwrapper {
     width: 100%;
-    height: 100vw;
+    height: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -24,6 +24,23 @@ p {
     text-align: center;
     font-size: 0.9rem;
 }
+.semere {
+    /* knap*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #CBB7A4;
+    padding: 1px;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    display: block;
+    width: 70%;
+    margin-left: 35vw;
+    margin-top: 10vw;
+
+}
 
 .keramik p {
     text-align: left;
@@ -38,7 +55,7 @@ p {
 }
 
 figure {
-    border: 1px solid #ddd4b2;
+    border: 1px solid #CBB7A4;
     padding: 20px;
 }
 
@@ -47,11 +64,19 @@ figure {
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
+    cursor: pointer;
 }
 
 .right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+}
+
+
+.side {
+    display: block;
+    width: 100%;
+    position: relative;
 }
 
 @media (min-width: 455px) {
@@ -64,6 +89,23 @@ figure {
         grid-template-rows: 1fr 1fr 1fr;
     }
 
+.semere {
+    /* knap*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #CBB7A4;
+    padding: 1px;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    display: block;
+    width: 70%;
+    margin-left: 20vw;
+    margin-top: 8vw;
+
+}
     figure {
         padding: 10px;
         height: 90%;
@@ -72,6 +114,7 @@ figure {
         margin-right: auto;
         grid-row: 2/3;
     }
+
 
     #side {
         text-align: center;
@@ -90,6 +133,7 @@ figure {
         width: 450px;
     }
 
+
 }
 
 @media (min-width: 660px) {
@@ -100,6 +144,24 @@ figure {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
+
+    .semere {
+    /* knap*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #CBB7A4;
+    padding: 1px;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    display: block;
+    width: 70%;
+    margin-left: 13vw;
+    margin-top: 5vw;
+
+}
 
     h2 {
         font-size: 0.9rem;
@@ -112,7 +174,7 @@ figure {
 
 @media (min-width: 700px) {
 
-     h2 {
+    h2 {
         font-size: 1rem;
     }
 
