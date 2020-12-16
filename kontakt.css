@@ -160,9 +160,8 @@ button {
     .form-section {
         height: 700px;
         width: 600px;
-        padding: none;
         font-size: 1.5rem;
-        margin: auto;
+        margin: none;
     }
 
     .form-section h2 {
@@ -172,12 +171,18 @@ button {
     .vindekilde {
         height: 420px;
         width: 800px;
+        margin: none;
+    }
+
+    .google {
+        margin: none;
     }
 
     .rutevejledning {
         width: 800px;
         height: 263px;
         font-size: 2.5rem;
+        margin: none;
     }
 
     button {
