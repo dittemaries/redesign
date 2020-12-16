@@ -9,7 +9,7 @@ body {
     height: 100%;
 }
 
-/************* FOOTER ************/
+/***************** FOOTER ****************/
 
 #main_wrapper {
     min-height: 100%;
@@ -70,6 +70,7 @@ body {
 
 
 /********** DESKTOP NAV BAR *************/
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -77,6 +78,7 @@ nav {
     min-height: 13vh;
     background-color: #CBB7A4;
     font-family: 'Montserrat', sans-serif;
+
 }
 
 .logo {
@@ -130,24 +132,6 @@ nav {
     right: 10vw;
 }
 
-/***************** BANNER ********************/
-
-
-.banner {
-    /*    background-position: center;*/
-    width: 100%;
-    height: auto;
-    height: 83vh;
-
-}
-
-.banner img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-
-}
-
 
 
 /********** MOBIL NAV BAR *************/
@@ -176,8 +160,33 @@ nav {
         left: 1vw;
     }
 
+}
+
+/********** MOBIL NAV BAR SLUT *************/
+
+/*Når menuknappen klikkes skal den tydeligøres (til javascript) */
+.menuknap_aktiv {
+    transform: translateX(0%);
+}
+
+/***************** BANNER ********************/
+
+
+.banner {
+    /*    background-position: center;*/
+    width: 100%;
+    height: auto;
+    height: 83vh;
 
 }
+
+.banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
 
 @media screen and (max-width: 750px) {
     body {
@@ -217,13 +226,6 @@ nav {
         display: block;
         z-index: 10;
     }
-}
-
-/********** MOBIL NAV BAR SLUT *************/
-
-/*Når menuknappen klikkes skal den tydeligøres (til javascript) */
-.menuknap_aktiv {
-    transform: translateX(0%);
 }
 
 
@@ -466,7 +468,7 @@ nav {
         top: 15px;
         font-family: 'Montserrat', sans-serif;
         width: 40vh;
-        height: 51.7vh;
+        height: 49.7vh;
 
     }
 
@@ -489,7 +491,4 @@ nav {
         color: white;
         font-size: 15px;
     }
-
-
-
 }
