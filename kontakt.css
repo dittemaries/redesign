@@ -31,11 +31,11 @@ header,
 footer {
     padding: 2rem;
     color: #fff;
-    text-align: center;
 }
 
 main {
     padding: 2rem;
+    display: grid;
 }
 
 
@@ -54,7 +54,6 @@ section {
 
 article {
     padding-right: 2rem;
-
 }
 
 /* Forms CSS */
@@ -84,8 +83,7 @@ button {
     border: 0;
     border-radius: 4px;
     background-color: antiquewhite;
-    color: #fff;
-    text-shadow: 0 0 6px rgb(0 0 0 / 40%);
+    color: black;
     font-weight: 700;
     font-size: 1rem;
 }
@@ -97,6 +95,8 @@ button {
 
 .streg {
     padding: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .vindekilde {
