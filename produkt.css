@@ -14,15 +14,18 @@ img {
 
 h1 {
     margin: 10px;
+    font-family: 'Playfair Display', serif;
 }
 
 h2 {
     text-align: center;
+     font-family: 'Playfair Display', serif;
 }
 
 p {
     text-align: center;
     font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
 }
 .semere {
     /* knap*/
