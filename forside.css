@@ -4,6 +4,55 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+/************* FOOTER ************/
+
+#main_wrapper {
+    min-height: 100%;
+}
+
+#section_wrapper {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+#footer {
+    background-color: #CBB7A4;
+    position: relative;
+    height: 170px;
+    margin-top: -100px;
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+}
+
+.kontaktinfo1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.google {
+    flex-basis: 600px;
+}
+
+.kontaktinfo {
+    flex: 1;
+}
+
+.information {
+    flex: 1;
+}
+
+.social {
+    flex: 1;
+}
+
+
+
 /********** DESKTOP NAV BAR *************/
 nav {
     display: flex;
@@ -65,6 +114,25 @@ nav {
     right: 10vw;
 }
 
+/***************** BANNER ********************/
+
+
+.banner {
+    /*    background-position: center;*/
+    width: 100%;
+    height: auto;
+    height: 83vh;
+
+}
+
+.banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
 
 /********** MOBIL NAV BAR *************/
 
@@ -92,9 +160,10 @@ nav {
         left: 1vw;
     }
 
+
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     body {
         overflow-x: hidden;
         /*så du ikke kan scroll til højre og se baren*/
@@ -132,58 +201,199 @@ nav {
         display: block;
         z-index: 10;
     }
-
-    .banner {
-        background: url("img/kandefraside.jpg");
-        background-size: cover;
-        background-position: left;
-        width: 100%;
-        height: 100vh;
-    }
 }
 
-/*Når menuknappen klikkes skal den tydeligøres*/
+/********** MOBIL NAV BAR SLUT *************/
+
+/*Når menuknappen klikkes skal den tydeligøres (til javascript) */
 .menuknap_aktiv {
     transform: translateX(0%);
 }
 
 
+/************* PRODUKTBILLEDER *****************/
 
-/***************** BANNER ********************/
-
-.banner {
-    background: url("img/kandefraside.jpg");
-    background-size: cover;
-    background-position: center;
+.billeder img {
     width: 100%;
-    height: 83vh;
+    padding: 15px;
+    height: auto;
+    cursor: pointer;
 }
 
-/***************** BILLEDER TIL PRODUKTSIDE ********************/
+.billeder {
+    display: inline-block;
+}
 
-.billede1 {
-    background: url("img/kandefraside.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 10px;
+/************** SKRIFT TIL PRODUKTBILLEDER **************/
+
+.keramik a {
     position: relative;
-    top: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    left: 30%;
+    bottom: 14vh;
+    background-color: #CBB7A4;
+    padding: 15px;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+}
+
+.blog a {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    left: 37%;
+    bottom: 14vh;
+    background-color: #CBB7A4;
+    padding: 15px;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+}
+
+.kopper a {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    left: 30%;
+    bottom: 14vh;
+    background-color: #CBB7A4;
+    padding: 15px;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+}
+
+/********** VIDEO OG TEKST **********/
+
+.video video {
+    position: relative;
     width: 100%;
-    height: 83vh;
+    padding: 15px;
+}
+
+.tekst h2 {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    top: 12px;
+}
+
+.tekst p {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    padding: 25px;
+    top: 8px;
+}
+
+/********* GOOGLE MAP *********/
+
+.google {
+    max-width: 800px;
+}
+
+.googlemap {
+    position: relative;
+
+    padding-left: 5%;
+    padding-right: 5%;
+    top: 20px;
+
+}
+
+.kontakt {
+    position: relative;
+    background-color: #CBB7A4;
+    top: 20px;
+}
+
+.kontakt h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+
+.kontakt p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+
+
+
+
+
+@media (min-width: 750px) {
+
+    .billeder {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        object-fit: cover;
+        width: 100%;
+        padding: 25px;
+        /*        height: 100vw;*/
+    }
+
+    .video video {
+        position: relative;
+        width: 80%;
+        padding: 40px;
+        left: 10%;
+    }
+
+    .tekst h2 {
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        top: 12px;
+    }
+
+    .tekst p {
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        padding-left: 200px;
+        padding-right: 200px;
+        top: 8px;
+    }
+
+    .kontaktinfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 100%;
+    }
+
+    .googlemap {
+        max-width: 80%;
+        min-height: 100%;
+    }
+
+
 }
 
 /*
-.billede2 {
-    background: url("img/kandefraside.jpg");
-    background-size: cover;
-    background-position: center;
-    top: 2rem;
-}
+ .billeder {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     object-fit: scale-down;
+ }
+*/
 
-.billede3 {
-    background: url("img/kandefraside.jpg");
-    background-size: cover;
-    background-position: center;
+/*
+.billeder img {
+    width: 100%;
     padding: 10px;
+    height: auto;
 }
 */
