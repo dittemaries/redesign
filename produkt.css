@@ -31,7 +31,7 @@ p {
     margin: 10px;
 }
 
-#streg {
+.streg {
     object-fit: scale-down;
     width: 100%;
     height: auto;
