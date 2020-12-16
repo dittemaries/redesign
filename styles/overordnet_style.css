@@ -1,0 +1,201 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/************* FOOTER ************/
+
+#main_wrapper {
+    min-height: 100%;
+}
+
+#section_wrapper {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+#footer_wrapper {
+    padding-top: 25%;
+}
+
+#footer {
+    background-color: #CBB7A4;
+    position: relative;
+    height: 170px;
+    margin-top: -100px;
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.information {
+    flex: 1;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+.infotekst {
+    list-style: none;
+}
+
+.infotekst a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+
+.social {
+    flex: 1;
+    padding-left: 60px;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+
+
+
+/********** DESKTOP NAV BAR *************/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 13vh;
+    background-color: #CBB7A4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    left: 3vw;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    position: relative;
+    left: 2vw;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    position: absolute;
+    left: 55vw;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menuknap {
+    display: none;
+    color: white;
+    font-size: 29px;
+    cursor: pointer;
+    position: absolute;
+    right: 10vw;
+}
+
+/********** MOBIL NAV BAR *************/
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        width: 55%;
+        position: absolute;
+        left: 40vw;
+    }
+
+    .logo {
+        color: white;
+        letter-spacing: 2px;
+        font-size: 30px;
+        cursor: pointer;
+        font-family: 'Playfair Display', serif;
+        position: absolute;
+        left: 5vw;
+    }
+
+    .logo h4 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 11px;
+        position: relative;
+        left: 1vw;
+    }
+
+
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        overflow-x: hidden;
+        /*så du ikke kan scroll til højre og se baren*/
+    }
+
+    .menu {
+        position: absolute;
+        right: 0px;
+        height: 83vh;
+        top: 13vh;
+        background-color: #CBB7A4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        transform: translateX(100%);
+        /*        transition: transform 0.5s ease-in;*/
+    }
+
+    .logo h4 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 11px;
+        position: relative;
+        left: 5vw;
+    }
+
+
+    /* menuen usynligøres indtil der klikkes på burger*/
+    .menu li {
+        opacity: 100%;
+    }
+
+    /*    synligør menuknappen(burgerbar)*/
+    .menuknap {
+        display: block;
+        z-index: 10;
+    }
+}
+
+/********** MOBIL NAV BAR SLUT *************/
+
+/*Når menuknappen klikkes skal den tydeligøres (til javascript) */
+.menuknap_aktiv {
+    transform: translateX(0%);
+}
