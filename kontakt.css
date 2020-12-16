@@ -148,6 +148,71 @@ button {
         width: 450px;
         margin-left: 10px;
     }
+}
 
+@media (min-width: 1206px) {
+    .form-section {
+        height: 620px;
+        width: 450px;
+    }
 
+    .vindekilde {
+        width: 470px;
+    }
+
+    .rutevejledning {
+        width: 470px;
+    }
+}
+
+@media (min-width: 1370px) {
+    .form-section {
+        height: 650px;
+        width: 490px;
+    }
+
+    .vindekilde {
+        height: 420px;
+        width: 500px;
+    }
+
+    .rutevejledning {
+        width: 500px;
+        height: 213px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .form-section {
+        height: 700px;
+        width: 600px;
+        padding: none;
+        font-size: 1.5rem;
+    }
+
+    .form-section h2 {
+        font-size: 2rem;
+    }
+
+    .vindekilde {
+        height: 420px;
+        width: 800px;
+    }
+
+    .rutevejledning {
+        width: 800px;
+        height: 263px;
+        font-size: 2.5rem;
+    }
+
+    button {
+        padding: 1rem 1.5rem;
+        margin-top: 1.1rem;
+        border: 0;
+        border-radius: 4px;
+        background-color: antiquewhite;
+        color: black;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
 }
