@@ -13,6 +13,7 @@ body {
 
 #main_wrapper {
     min-height: 100%;
+
 }
 
 #section_wrapper {
@@ -254,7 +255,6 @@ nav {
     border-radius: 30px;
     transform: translate(-50%, -50%);
     cursor: pointer;
-
 }
 
 .blog a {
@@ -270,6 +270,7 @@ nav {
     border-radius: 30px;
     transform: translate(-50%, -50%);
     cursor: pointer;
+
 
 }
 
@@ -338,7 +339,7 @@ nav {
 .kontakt {
     position: relative;
     background-color: #CBB7A4;
-    top: 20px;
+    /*    top: 20px;*/
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -375,7 +376,7 @@ nav {
     background: #3B5998;
     color: white;
     /*    position: relative;*/
-/*    paddingt: 10px;*/
+    /*    paddingt: 10px;*/
 
 }
 
@@ -384,10 +385,12 @@ nav {
     ;
     color: white;
     /*    position: relative;*/
-
 }
 
-
+.some_wrapper a {
+    width: 50px;
+    height: 50px;
+}
 
 
 
@@ -418,6 +421,8 @@ nav {
         font-family: 'Montserrat', sans-serif;
         text-align: center;
         top: 12px;
+        font-size: 40px;
+
     }
 
     .tekst p {
@@ -436,12 +441,13 @@ nav {
     }
 
     .mapskontakt {
-        display: flex;
         justify-content: space-around;
         max-width: 80%;
         min-height: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        /*        display: grid;*/
+        /*        grid-template-columns: 1fr 1fr;*/
+        margin: 0 auto;
+        display: flex;
     }
 
     .google {
@@ -455,9 +461,35 @@ nav {
     }
 
     .kontakt {
-        flex-basis: 600px;
-        /*        padding: 15px;*/
+        position: relative;
+        background-color: #CBB7A4;
+        top: 15px;
+        font-family: 'Montserrat', sans-serif;
+        width: 40vh;
+        height: 51.7vh;
+
+    }
+
+    .kontakt h2 {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        padding-top: 5%;
+        font-size: 25px;
+        padding-top: 30px;
+        color: white;
 
 
     }
+
+    .kontakt ul {
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        padding: 5%;
+        list-style: none;
+        color: white;
+        font-size: 15px;
+    }
+
+
+
 }
