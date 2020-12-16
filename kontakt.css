@@ -90,6 +90,11 @@ button {
     font-size: 1rem;
 }
 
+.knap {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .streg {
     padding: 2rem;
 }
