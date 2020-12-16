@@ -20,6 +20,10 @@ body {
     padding-bottom: 100px;
 }
 
+#footer_wrapper {
+    padding-top: 25%;
+}
+
 #footer {
     background-color: #CBB7A4;
     position: relative;
@@ -30,26 +34,37 @@ body {
     justify-content: space-around;
 }
 
-.kontaktinfo1 {
-    display: flex;
-    justify-content: space-around;
-}
-
-.google {
-    flex-basis: 600px;
-}
-
-.kontaktinfo {
-    flex: 1;
-}
 
 .information {
     flex: 1;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 15px;
 }
+
+.infotekst {
+    list-style: none;
+}
+
+.infotekst a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
 
 .social {
     flex: 1;
+    padding-left: 60px;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 15px;
 }
+
 
 
 
@@ -289,6 +304,10 @@ nav {
     top: 12px;
 }
 
+.tekst {
+    padding-bottom: 70px;
+}
+
 .tekst p {
     position: relative;
     font-family: 'Montserrat', sans-serif;
@@ -301,36 +320,78 @@ nav {
 
 .google {
     max-width: 800px;
+    object-fit: cover;
+    overflow: auto;
+
 }
 
-.googlemap {
+.mapskontakt {
     position: relative;
-
     padding-left: 5%;
     padding-right: 5%;
     top: 20px;
-
+    padding-bottom: 10px;
 }
+
+/********* GOOGLE MAP KONTAKTBOKS*********/
 
 .kontakt {
     position: relative;
     background-color: #CBB7A4;
     top: 20px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .kontakt h2 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    padding-top: 5%;
 }
 
 
-.kontakt p {
+.kontakt ul {
     font-family: 'Montserrat', sans-serif;
-    text-align: left;
+    text-align: center;
+    padding: 5%;
+    list-style: none;
+}
+
+.social h2 {
+    padding-bottom: 30px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    /*    width: 30px;*/
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    /*    border-radius: 50%;*/
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    /*    position: relative;*/
+/*    paddingt: 10px;*/
+
+}
+
+.fa-instagram {
+    background: #f40083;
+    ;
+    color: white;
+    /*    position: relative;*/
+
 }
 
 
 
+
+
+/********* MEDUE 750px CONTENT  **********/
 
 
 
@@ -374,26 +435,29 @@ nav {
         min-height: 100%;
     }
 
-    .googlemap {
+    .mapskontakt {
+        display: flex;
+        justify-content: space-around;
         max-width: 80%;
         min-height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
+    .google {
+        /*        flex-basis: 600px;*/
+        /*        position: absolute;*/
+        object-fit: contain;
+        padding: 15px;
+        max-width: 100%;
 
+
+    }
+
+    .kontakt {
+        flex-basis: 600px;
+        /*        padding: 15px;*/
+
+
+    }
 }
-
-/*
- .billeder {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     object-fit: scale-down;
- }
-*/
-
-/*
-.billeder img {
-    width: 100%;
-    padding: 10px;
-    height: auto;
-}
-*/
