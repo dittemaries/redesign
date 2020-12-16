@@ -31,13 +31,13 @@ p {
     text-decoration: none;
     color: white;
     background-color: #CBB7A4;
-    padding: 1px;
+    padding: 20px;
     border-radius: 30px;
     transform: translate(-50%, -50%);
     cursor: pointer;
     display: block;
     width: 70%;
-    margin-left: 35vw;
+    margin-left: 40vw;
     margin-top: 10vw;
 
 
@@ -58,6 +58,7 @@ p {
 figure {
     border: 1px solid #CBB7A4;
     padding: 20px;
+    margin: 25px;
 }
 
 .arrow {
@@ -98,13 +99,13 @@ figure {
     text-decoration: none;
     color: white;
     background-color: #CBB7A4;
-    padding: 1px;
+    padding: 15px;
     border-radius: 30px;
     transform: translate(-50%, -50%);
     cursor: pointer;
     display: block;
-    width: 70%;
-    margin-left: 20vw;
+    width: 80%;
+    margin-left: 18vw;
     margin-top: 8vw;
 
 }
@@ -154,13 +155,13 @@ figure {
     text-decoration: none;
     color: white;
     background-color: #CBB7A4;
-    padding: 1px;
+    padding: 15px;
     border-radius: 30px;
     transform: translate(-50%, -50%);
     cursor: pointer;
     display: block;
-    width: 70%;
-    margin-left: 13vw;
+    width: 80%;
+    margin-left: 12vw;
     margin-top: 5vw;
 
 }
@@ -182,6 +183,10 @@ figure {
 
     p {
         font-size: 0.72rem;
+    }
+
+    .semere {
+        margin-left: 12.5vw;
     }
 }
 
