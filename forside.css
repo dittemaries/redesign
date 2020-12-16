@@ -302,7 +302,7 @@ nav {
 
 .tekst h2 {
     position: relative;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
     text-align: center;
     top: 12px;
 }
@@ -317,6 +317,7 @@ nav {
     text-align: left;
     padding: 25px;
     top: 8px;
+    font-style: italic;
 }
 
 /********* GOOGLE MAP *********/
@@ -420,7 +421,8 @@ nav {
 
     .tekst h2 {
         position: relative;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Playfair Display', serif;
+
         text-align: center;
         top: 12px;
         font-size: 40px;
@@ -434,6 +436,7 @@ nav {
         padding-left: 200px;
         padding-right: 200px;
         top: 8px;
+        font-style: italic;
     }
 
     .kontaktinfo {
