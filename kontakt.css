@@ -22,9 +22,10 @@ h1 {
     margin-bottom: 1rem;
 }
 
-#overskrift {
-    display: flex;
-    justify-content: left;
+.overskrift {
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 h2 {
@@ -125,11 +126,12 @@ button {
     .elementer {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .form-section {
         height: 620px;
-        margin-right: 20px;
         width: 400px;
     }
 
@@ -138,11 +140,13 @@ button {
     }
 
     .vindekilde {
-        width: 600px;
+        width: 450px;
+        margin-left: 10px;
     }
 
     .rutevejledning {
-        width: 600px;
+        width: 450px;
+        margin-left: 10px;
     }
 
 
