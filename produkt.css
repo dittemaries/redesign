@@ -7,7 +7,6 @@
 
 }
 
-
 img {
     width: 100%;
     height: auto;
@@ -21,14 +20,15 @@ h2 {
     text-align: center;
 }
 
-#keramik p {
+p {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.keramik p {
     text-align: left;
     font-size: 0.8rem;
     margin: 10px;
-}
-
-p {
-    text-align: center;
 }
 
 #streg {
@@ -54,12 +54,81 @@ figure {
     -webkit-transform: rotate(-45deg);
 }
 
-@media (min-width: 460px) {
+@media (min-width: 455px) {
 
     #sectionwrapper {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    figure {
+        padding: 10px;
+        height: 90%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-row: 2/3;
+    }
+
+    #side {
+        text-align: center;
+        /*Skal stå i midten på siden*/
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .keramik {
+        width: 450px;
+    }
+
+}
+
+@media (min-width: 660px) {
+    #sectionwrapper {
+        width: 100%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 700px) {
+
+     h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.72rem;
+    }
+}
+
+@media (min-width: 800px) {
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
     }
 
 }
